@@ -30,7 +30,11 @@ Route::post('/saveOrder', OrderController::class)
 Route::get('/shoppingCart', ShoppingCartController::class)
     ->name('cart.index');
 
-Route::get('/', [ProductController::class, 'index'])
+Route::get('products', [ProductController::class, 'index'])
     ->name('products.index');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';

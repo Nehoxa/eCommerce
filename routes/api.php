@@ -22,6 +22,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
 
     Route::get('products/increase/{id}', [CartController::class, 'increase']);
     Route::get('products/decrease/{id}', [CartController::class, 'decrease']);
+    Route::delete('products/delete/{id}', [CartController::class, 'delete']);
 
     Route::get('products/count/', [CartController::class, 'count'])
     ->name('products.count');

@@ -34,7 +34,7 @@ export function useProduct() {
     }
 
     const destroyProduct = async(id) => {
-        await axios.delete('/api/products/' + id);
+        await axios.delete('/api/products/delete/' + id);
     }
 
     return {
