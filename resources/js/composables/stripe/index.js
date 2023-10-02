@@ -34,7 +34,7 @@ export function useStripe() {
             case "succeeded":
                 showMessage("Payment succeeded!");
                 await saveOrder();
-                window.location.href = 'https://ecommerce.jloire.fr/dashboard';
+                window.location = '/dashboard';
                 break;
             case "processing":
                 showMessage("Your payment is processing.");
