@@ -55,7 +55,7 @@ export function useStripe() {
             elements: elements.value,
             confirmParams: {
                 // Make sure to change this to your payment completion page
-                return_url: 'http://localhost/checkout',
+                return_url: 'https://ecommerce.jloire.fr/checkout',
             },
         });
 
