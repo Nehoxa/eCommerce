@@ -42,7 +42,6 @@
                             <!-- Card Ends -->
                         </div>
                     </div>
-                    <!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
                 </div>
             </div>
         </div>
